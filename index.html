@@ -219,75 +219,19 @@
     line-height: 1.4;
   }
 
-  /* FORM CARD */
-  .form-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 28px 24px;
-    margin-bottom: 24px;
-    animation: fadeUp 0.6s ease 0.4s both;
-    position: relative;
-    overflow: hidden;
-  }
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeBM35_7S7WlIjF5bNtsdIU4vfAypudFzQ16H6Z9rjEt1WsMA/formResponse" method="POST" target="hidden_iframe">
 
-  .form-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--gold), var(--gold2), transparent);
-  }
+  <input type="text" name="entry.948850067" placeholder="Seu nome" required>
 
-  .form-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
+  <input type="tel" name="entry.1861064621" placeholder="Seu WhatsApp" required>
 
-  .form-subtitle {
-    font-size: 0.78rem;
-    color: var(--text-dim);
-    margin-bottom: 24px;
-    line-height: 1.5;
-  }
+  <input type="email" name="entry.815847481" placeholder="Seu email" required>
 
-  .form-group {
-    margin-bottom: 14px;
-  }
+  <button type="submit">Enviar</button>
 
-  .form-label {
-    display: block;
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-dim);
-    margin-bottom: 7px;
-  }
+</form>
 
-  .form-input {
-    width: 100%;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px 16px;
-    font-family: 'Outfit', sans-serif;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    -webkit-appearance: none;
-  }
-
-  .form-input::placeholder { color: var(--text-muted); }
-
-  .form-input:focus {
-    border-color: var(--gold);
-    box-shadow: 0 0 0 3px rgba(196,154,44,0.08);
-  }
-
-  .form-input.error { border-color: #ef4444; }
+<iframe name="hidden_iframe" style="display:none;"></iframe>
 
   .error-msg {
     font-size: 0.7rem;
